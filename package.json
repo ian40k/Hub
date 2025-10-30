@@ -5,7 +5,8 @@
   "main": "api/bot.js",
   "scripts": {
     "dev": "node api/bot.js",
-    "start": "node api/bot.js"
+    "start": "node api/bot.js",
+    "build": "echo 'No build process needed'"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.4.0",
