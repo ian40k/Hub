@@ -1,7 +1,4 @@
 {
-  "scripts": {
-    "build": "[WhatsApp-bot] build --output public"
-{
   "version": 2,
   "builds": [
     {
