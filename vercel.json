@@ -1,5 +1,26 @@
 {
   "scripts": {
-    "build": "[my-framework] build --output public"
+    "build": "[WhatsApp-bot] build --output public"
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/bot.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/bot.js"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    }
+  ]
   }
-}
